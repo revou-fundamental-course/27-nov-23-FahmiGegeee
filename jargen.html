@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Kalkulator Matematik</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+  
+  </head>
+
+  <body>
+    <!-- Tittle -->
+    <div>
+      <h1 class="title" id="title">Welcome to Katik</h1>
+      <p class="subtitle">Hai Sobat, Selamat datang di Katik :P</p>
+      <p class="subtitle">Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+    </div>
+
+    <!-- Header & Nav -->
+    <header>
+      <nav>
+        <div class="head-nav-jajargenjang">
+          <a href="index.html" class="triangle">Segitiga</a>
+          <a href="jargen.html" class="jajargenjang">Jajar Genjang</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Luas Jajargenjang -->
+      <section id="jajargenjang">
+        <div class="main-judul">
+          <h2>Luas Jajar Genjang</h2>
+        </div>
+        <div class="card">
+          <img src="https://katik.azurewebsites.net/images/jajar-genjang.jpg" class="img-jajargenjang" alt="jargen" />
+          <div>
+            <h4>Rumus Luas Jajar Genjang</h4>
+            <p class="rumus">L = a x t</p>
+          </div>
+          <div>
+            <p>Dimana :</p>
+            <p>L = Luas</p>
+            <p>a = Alas</p>
+            <p>t = Tinggi</p>
+          </div>
+          <hr style="margin: 30px 0" />
+          <div class="form-hitung">
+            <h2>Hitung Luas Jajar Genjang</h2>
+            <form action="" id="formluasJajargenjang" onsubmit="return luas_jajargenjang()">
+              <input type="number" id="alas" placeholder="Nilai Alas" />
+              <input type="number" id="tinggi" placeholder="Nilai Tinggi" />
+
+              <div id="luas-jajargenjang"></div>
+
+              <button type="submit" class="btn-hitung" onclick="luas_jajargenjang()">Hitung</button>
+            </form>
+            <button type="reset" class="btn-reset" onclick="reset_LJ()">Reset</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Keliling Jajargenjang -->
+      <section id="jajargenjang">
+        <div class="main-judul">
+          <h2>Keliling Jajar Genjang</h2>
+        </div>
+        <div class="card">
+          <img src="https://katik.azurewebsites.net/images/jajar-genjang.jpg" class="img-jajargenjang" alt="jargen" />
+          <div>
+            <h4>Rumus Keliling Jajar Genjang</h4>
+            <p class="rumus">K = 2 (p x l)</p>
+          </div>
+          <div>
+            <p>Dimana :</p>
+            <p>K = Keliling</p>
+            <p>p = Panjang</p>
+            <p>l = Lebar</p>
+          </div>
+          <hr style="margin: 30px 0" />
+          <div class="form-hitung">
+            <h2>Hitung Keliling Jajar Genjang</h2>
+            <form action="" id="formkelilingJajargenjang" onsubmit="return keliling_jajargenjang()">
+              <input type="number" id="panjang" placeholder="Panjang" />
+              <input type="number" id="lebar" placeholder="Lebar" />
+
+              <div id="keliling-jajargenjang"></div>
+
+              <button type="submit" class="btn-hitung" onclick="keliling_jajargenjang()">Hitung</button>
+            </form>
+            <button type="reset" class="btn-reset" onclick="reset_KJ()">Reset</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
